@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Chess
+Exec=qmlscene $@ Chess.qml
+Icon=ChessIcon.svg
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true

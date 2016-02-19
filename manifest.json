@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.theo.friberg.chess",
+    "description": "This is an app for playing chess against other human players. No AI is included.",
+    "framework": "ubuntu-sdk-14.04",
+    "architecture": "all",
+    "title": "ChessBoard",
+    "hooks": {
+        "Chess": {
+            "apparmor": "Chess.json",
+            "desktop": "Chess.desktop"
+        }
+    },
+    "version": "2",
+    "maintainer": "Théo Friberg <theo.friberg@gmail.com>"
+}

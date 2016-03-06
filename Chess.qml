@@ -837,11 +837,11 @@ MainView {
                             var can_castle_to_the_left = true; // Can the player rook to the left?
                             var can_castle_to_the_right = true; // Can the player rook to the right?
 
-                            if(pieces[Own_side][5][0] !== " " || pieces[Own_side][6][0] !== " "){ // If there is something to the left
-                                nothing_in_the_way_to_the_left = false;
-                            }
-                            if(pieces[Own_side][1][0] !== " " || pieces[Own_side][2][0] !== " " || pieces[Own_side][3][0] !== " "){ // If there is something to the right
+                            if(pieces[Own_side][5][0] !== " " || pieces[Own_side][6][0] !== " "){ // If there is something to the right
                                 nothing_in_the_way_to_the_right = false;
+                            }
+                            if(pieces[Own_side][1][0] !== " " || pieces[Own_side][2][0] !== " " || pieces[Own_side][3][0] !== " "){ // If there is something to the left
+                                nothing_in_the_way_to_the_left = false;
                             }
                             if(nothing_in_the_way_to_the_left || nothing_in_the_way_to_the_right){ // If it has the space to castle atleast one way...
                                 i = 0;
@@ -883,6 +883,9 @@ MainView {
                                         ii = 0;
                                         i++;
                                     }
+
+                                    can_castle_to_the_left  = can_castle_to_the_left  && nothing_in_the_way_to_the_left;
+                                    can_castle_to_the_right = can_castle_to_the_right && nothing_in_the_way_to_the_right;
 
                                     if(king_is_not_checked && (can_castle_to_the_left || can_castle_to_the_right)){ // If the king can castle to at least one side
                                         if(can_castle_to_the_left){ // If he can perhaps castle to the left

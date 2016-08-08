@@ -8,33 +8,33 @@ MainView {
     applicationName: "com.ubuntu.developer.theo.friberg.chess";
     property bool case_markings: true;
     Page {
-        title: "Chess"
+        title: i18n.tr("Chess")
         tools: ToolbarItems {
 
             ToolbarButton {
                 action: Action { // Action to be triggered when a player presses the "Turn board" -button
-                    text: "Markings"
+                    text: i18n.tr("Markings")
                     iconSource: Qt.resolvedUrl("Images/markings_icon.svg")
                     onTriggered: case_markings = !case_markings;
                 }
             }
             ToolbarButton {
                 action: Action { // Action to be triggered when a player presses the "Turn board" -button
-                    text: "Rotate"
+                    text: i18n.tr("Rotate")
                     iconSource: Qt.resolvedUrl("Images/return.svg")
                     onTriggered: board.turn_around();
                 }
             }
             ToolbarButton {
                 action: Action { // Action to be triggered when a player presses the "New game" -button
-                    text: "New game"
+                    text: i18n.tr("New game")
                     iconSource: Qt.resolvedUrl("/usr/share/icons/ubuntu-mobile/actions/scalable/add.svg")
                     onTriggered: board.reset();
                 }
             }
             ToolbarButton {
                 action: Action { // Action to be triggered when a player presses the "Undo" -button
-                    text: "Undo"
+                    text: i18n.tr("Undo")
                     iconSource: Qt.resolvedUrl("/usr/share/icons/ubuntu-mobile/actions/scalable/undo.svg")
                     onTriggered: board.undo();
                 }
@@ -74,10 +74,10 @@ MainView {
                         id: clear_board_dialog
                         Dialog {
                             id: dialogue
-                            title: "Clear board"
-                            text: "Are you sure that you want to clear the board?"
+                            title: i18n.tr("Clear board")
+                            text: i18n.tr("Are you sure that you want to clear the board?")
                             Button {
-                                text: "cancel"
+                                text: i18n.tr("cancel")
                                 onClicked: PopupUtils.close(dialogue)
                             }
                             Button {
@@ -99,7 +99,7 @@ MainView {
                                     PopupUtils.close(dialogue)
                                 }
 
-                                text: "yes"
+                                text: i18n.tr("yes")
                                 onClicked: clear();
                             }
                         }
@@ -109,8 +109,8 @@ MainView {
 
                         Dialog {
                             id: dialogue
-                            title: "Promote pawn to..."
-                            text: "One of your pawns reached the other side of the board. You must now promote it to a new..."
+                            title: i18n.tr("Promote pawn to...")
+                            text: i18n.tr("One of your pawns reached the other side of the board. You must now promote it to a new...")
                             function promote_to(piece){ // Function that does the promoting
                                 board.pieces[board.selection[1]][board.selection[0]][0] = piece;
                                 board.selection = null;
@@ -118,19 +118,19 @@ MainView {
                                 PopupUtils.close(this)
                             }
                             Button {
-                                text: "Queen"
+                                text: i18n.tr("Queen")
                                 onClicked: dialogue.promote_to("q");
                             }
                             Button {
-                                text: "Rook"
+                                text: i18n.tr("Rook")
                                 onClicked: dialogue.promote_to("r");
                             }
                             Button {
-                                text: "Bishop"
+                                text: i18n.tr("Bishop")
                                 onClicked: dialogue.promote_to("b");
                             }
                             Button {
-                                text: "Knight"
+                                text: i18n.tr("Knight")
                                 onClicked: dialogue.promote_to("k");
                             }
                         }

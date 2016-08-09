@@ -22,7 +22,7 @@ msgid "Chess"
 msgstr "Échecs"
 
 #: Chess.qml:16
-msgid "Markings"
+msgid "Coordinates"
 msgstr "Coordonnées"
 
 #: Chess.qml:23

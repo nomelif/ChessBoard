@@ -23,7 +23,7 @@ msgstr "Échecs"
 
 #: Chess.qml:16
 msgid "Markings"
-msgstr "Notations"
+msgstr "Coordonnées"
 
 #: Chess.qml:23
 msgid "Rotate"

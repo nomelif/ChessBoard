@@ -21,7 +21,7 @@ msgid "Chess"
 msgstr "Šakki"
 #: Chess.qml:16
 msgid "Coordinates"
-msgstr "Merkinnät"
+msgstr "Koordinaatit"
 #: Chess.qml:23
 msgid "Rotate"
 msgstr "Käännä"

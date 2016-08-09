@@ -13,7 +13,7 @@ MainView {
 
             ToolbarButton {
                 action: Action { // Action to be triggered when a player presses the "Turn board" -button
-                    text: i18n.tr("Markings")
+                    text: i18n.tr("Coordinates")
                     iconSource: Qt.resolvedUrl("Images/markings_icon.svg")
                     onTriggered: case_markings = !case_markings;
                 }

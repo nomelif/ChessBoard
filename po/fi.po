@@ -38,9 +38,11 @@ msgstr "Lauta alkutilaan"
 msgid "Are you sure that you want to clear the board?"
 msgstr "Haluatko varmasti palauttaa laudan alkutilaan?"
 #: Chess.qml:80
-msgid "cancel" msgstr "Peru"
+msgid "cancel"
+msgstr "Peru"
 #: Chess.qml:10
-msgid "yes" msgstr "Kyllä"
+msgid "yes"
+msgstr "Kyllä"
 #: Chess.qml:112
 msgid "Promote pawn to..."
 msgstr "Korota sotilaasta..."
@@ -54,7 +56,8 @@ msgstr ""
 msgid "Queen"
 msgstr "Kuningattareksi"
 #: Chess.qml:125
-msgid "Rook" msgstr "Torniksi"
+msgid "Rook"
+msgstr "Torniksi"
 #: Chess.qml:129
 msgid "Bishop"
 msgstr "Lähetiksi"

@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-08 19:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+#: Chess.qml:11
+msgid "Chess"
+msgstr "Šakki"
+#: Chess.qml:16
+msgid "Markings"
+msgstr "Merkinnät"
+#: Chess.qml:23
+msgid "Rotate"
+msgstr "Käännä"
+#: Chess.qml:30
+msgid "New game"
+msgstr "Uusi peli"
+#: Chess.qml:37
+msgid "Undo"
+msgstr "Peru"
+#: Chess.qml:77
+msgid "Clear board"
+msgstr "Lauta alkutilaan"
+#: Chess.qml:78
+msgid "Are you sure that you want to clear the board?"
+msgstr "Haluatko varmasti palauttaa laudan alkutilaan?"
+#: Chess.qml:80
+msgid "cancel" msgstr "Peru"
+#: Chess.qml:10
+msgid "yes" msgstr "Kyllä"
+#: Chess.qml:112
+msgid "Promote pawn to..."
+msgstr "Korota sotilaasta..."
+#: Chess.qml:113
+msgid ""
+"One of your pawns reached the other side of the board. You must now promote "
+"it to a new..."
+msgstr ""
+"Sotilaaksi saavutti laudan toiseen puoleen. Sinun on nyt korotettava se..."
+#: Chess.qml:121
+msgid "Queen"
+msgstr "Kuningattareksi"
+#: Chess.qml:125
+msgid "Rook" msgstr "Torniksi"
+#: Chess.qml:129
+msgid "Bishop"
+msgstr "Lähetiksi"
+#: Chess.qml:133
+msgid "Knight"
+msgstr "Ratsuksi"
